@@ -1,0 +1,571 @@
+<html lang="en"><head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>ccbp test reporter</title>
+            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+	        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/522ee478c4.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+            <script src="js/view.js"></script>
+        </head><body><div id="test-results">{
+  &quot;numFailedTestSuites&quot;: 1,
+  &quot;numFailedTests&quot;: 2,
+  &quot;numPassedTestSuites&quot;: 0,
+  &quot;numPassedTests&quot;: 30,
+  &quot;numPendingTestSuites&quot;: 0,
+  &quot;numPendingTests&quot;: 0,
+  &quot;numRuntimeErrorTestSuites&quot;: 0,
+  &quot;numTodoTests&quot;: 0,
+  &quot;numTotalTestSuites&quot;: 1,
+  &quot;numTotalTests&quot;: 32,
+  &quot;openHandles&quot;: [],
+  &quot;snapshot&quot;: {
+    &quot;added&quot;: 0,
+    &quot;didUpdate&quot;: false,
+    &quot;failure&quot;: false,
+    &quot;filesAdded&quot;: 0,
+    &quot;filesRemoved&quot;: 0,
+    &quot;filesRemovedList&quot;: [],
+    &quot;filesUnmatched&quot;: 0,
+    &quot;filesUpdated&quot;: 0,
+    &quot;matched&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;unchecked&quot;: 0,
+    &quot;uncheckedKeysByFile&quot;: [],
+    &quot;unmatched&quot;: 0,
+    &quot;updated&quot;: 0
+  },
+  &quot;startTime&quot;: 1686488041947,
+  &quot;success&quot;: false,
+  &quot;testResults&quot;: [
+    {
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 2,
+      &quot;numPassingTests&quot;: 30,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 1686488043252,
+        &quot;runtime&quot;: 926,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 1686488042326
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0,
+        &quot;uncheckedKeys&quot;: []
+      },
+      &quot;testFilePath&quot;: &quot;/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/.tests/index.test.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseAn Express instance should be exported from the &#x27;app.js&#x27; file using the default export syntax&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;An Express instance should be exported from the &#x27;app.js&#x27; file using the default export syntax&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_1&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 20,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;actual&quot;: &quot;&quot;,
+              &quot;error&quot;: {
+                &quot;code&quot;: &quot;EADDRINUSE&quot;,
+                &quot;errno&quot;: -98,
+                &quot;syscall&quot;: &quot;listen&quot;,
+                &quot;address&quot;: &quot;::&quot;,
+                &quot;port&quot;: 3000
+              },
+              &quot;expected&quot;: &quot;&quot;,
+              &quot;matcherName&quot;: &quot;&quot;,
+              &quot;message&quot;: &quot;Error: listen EADDRINUSE: address already in use :::3000&quot;,
+              &quot;passed&quot;: false,
+              &quot;stack&quot;: &quot;Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (net.js:1331:16)\n    at listenInCluster (net.js:1379:12)\n    at Server.listen (net.js:1465:7)\n    at Function.listen (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/node_modules/.pnpm/express@4.17.1/node_modules/express/lib/application.js:618:24)\n    at installDBAndServer (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/app.js:20:9)&quot;
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: listen EADDRINUSE: address already in use :::3000\n    at Server.setupListenHandle [as _listen2] (net.js:1331:16)\n    at listenInCluster (net.js:1379:12)\n    at Server.listen (net.js:1465:7)\n    at Function.listen (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/node_modules/.pnpm/express@4.17.1/node_modules/express/lib/application.js:618:24)\n    at installDBAndServer (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/app.js:20:9)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?status=TO%20DO&#x27; should return the list of all todos whose status is &#x27;TO DO&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?status=TO%20DO&#x27; should return the list of all todos whose status is &#x27;TO DO&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_2&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 15,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?priority=HIGH&#x27; should return the list of all todos whose priority is &#x27;HIGH&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?priority=HIGH&#x27; should return the list of all todos whose priority is &#x27;HIGH&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_3&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?priority=HIGH&amp;status=IN%20PROGRESS&#x27; should return the list of all todos whose priority is &#x27;HIGH&#x27; and status is &#x27;IN PROGRESS&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?priority=HIGH&amp;status=IN%20PROGRESS&#x27; should return the list of all todos whose priority is &#x27;HIGH&#x27; and status is &#x27;IN PROGRESS&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_4&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?category=WORK&amp;status=DONE&#x27; should return the list of all todos whose category is &#x27;WORK&#x27; and status is &#x27;DONE&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?category=WORK&amp;status=DONE&#x27; should return the list of all todos whose category is &#x27;WORK&#x27; and status is &#x27;DONE&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_5&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?category=LEARNING&amp;priority=HIGH&#x27; should return the list of all todos whose category is &#x27;LEARNING&#x27; and priority is &#x27;HIGH&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?category=LEARNING&amp;priority=HIGH&#x27; should return the list of all todos whose category is &#x27;LEARNING&#x27; and priority is &#x27;HIGH&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_6&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?category=HOME&#x27; should return the list of all todos whose category is &#x27;HOME&#x27; as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?category=HOME&#x27; should return the list of all todos whose category is &#x27;HOME&#x27; as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_7&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/?search_q=Buy&#x27; should return the list of all todos whose todo contains &#x27;Buy&#x27; text as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/?search_q=Buy&#x27; should return the list of all todos whose todo contains &#x27;Buy&#x27; text as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_8&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/:todoId/&#x27; should return a specific todo based on the todo ID as a response&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/:todoId/&#x27; should return a specific todo based on the todo ID as a response&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_9&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/agenda/?date=:date&#x27; should return a list of all todos of the specific date as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/agenda/?date=:date&#x27; should return a list of all todos of the specific date as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_10&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/&#x27; with invalid todo status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/&#x27; with invalid todo status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_11&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/&#x27; with invalid todo priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/&#x27; with invalid todo priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_12&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/todos/&#x27; with invalid todo category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/todos/&#x27; with invalid todo category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_13&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe GET request to the path &#x27;/agenda/&#x27; with an invalid date query should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The GET request to the path &#x27;/agenda/&#x27; with an invalid date query should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_14&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 24,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe POST request to the path &#x27;/todos/&#x27; should return the &#x27;Todo Successfully Added&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The POST request to the path &#x27;/todos/&#x27; should return the &#x27;Todo Successfully Added&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_15&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 5,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;actual&quot;: &quot;&quot;,
+              &quot;error&quot;: {
+                &quot;matcherResult&quot;: {
+                  &quot;actual&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;todo&quot;: &quot;Review codes&quot;,
+                    &quot;priority&quot;: &quot;MEDIUM&quot;,
+                    &quot;status&quot;: &quot;TO DO&quot;,
+                    &quot;category&quot;: &quot;WORK&quot;,
+                    &quot;due_date&quot;: &quot;2021-9-22&quot;
+                  },
+                  &quot;expected&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;todo&quot;: &quot;Review codes&quot;,
+                    &quot;priority&quot;: &quot;MEDIUM&quot;,
+                    &quot;category&quot;: &quot;WORK&quot;,
+                    &quot;status&quot;: &quot;TO DO&quot;,
+                    &quot;due_date&quot;: &quot;2021-09-22&quot;
+                  },
+                  &quot;name&quot;: &quot;toEqual&quot;,
+                  &quot;pass&quot;: false
+                }
+              },
+              &quot;expected&quot;: &quot;&quot;,
+              &quot;matcherName&quot;: &quot;&quot;,
+              &quot;message&quot;: &quot;Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 1\n\n  Object {\n    \&quot;category\&quot;: \&quot;WORK\&quot;,\n-   \&quot;due_date\&quot;: \&quot;2021-09-22\&quot;,\n+   \&quot;due_date\&quot;: \&quot;2021-9-22\&quot;,\n    \&quot;id\&quot;: 6,\n    \&quot;priority\&quot;: \&quot;MEDIUM\&quot;,\n    \&quot;status\&quot;: \&quot;TO DO\&quot;,\n    \&quot;todo\&quot;: \&quot;Review codes\&quot;,\n  }&quot;,
+              &quot;passed&quot;: false,
+              &quot;stack&quot;: &quot;Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 1\n\n  Object {\n    \&quot;category\&quot;: \&quot;WORK\&quot;,\n-   \&quot;due_date\&quot;: \&quot;2021-09-22\&quot;,\n+   \&quot;due_date\&quot;: \&quot;2021-9-22\&quot;,\n    \&quot;id\&quot;: 6,\n    \&quot;priority\&quot;: \&quot;MEDIUM\&quot;,\n    \&quot;status\&quot;: \&quot;TO DO\&quot;,\n    \&quot;todo\&quot;: \&quot;Review codes\&quot;,\n  }\n    at Object.&lt;anonymous&gt; (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/.tests/index.test.js:282:65)&quot;
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  - 1\n+ Received  + 1\n\n  Object {\n    \&quot;category\&quot;: \&quot;WORK\&quot;,\n-   \&quot;due_date\&quot;: \&quot;2021-09-22\&quot;,\n+   \&quot;due_date\&quot;: \&quot;2021-9-22\&quot;,\n    \&quot;id\&quot;: 6,\n    \&quot;priority\&quot;: \&quot;MEDIUM\&quot;,\n    \&quot;status\&quot;: \&quot;TO DO\&quot;,\n    \&quot;todo\&quot;: \&quot;Review codes\&quot;,\n  }\n    at Object.&lt;anonymous&gt; (/home/workspace/.tmp/nodejs/coding-assignments/coding-assignment-1/.tests/index.test.js:282:65)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe database should be updated on the post request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;The database should be updated on the post request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_16&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe POST request to the path &#x27;/todos/&#x27; with invalid todo status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The POST request to the path &#x27;/todos/&#x27; with invalid todo status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_17&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 4,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe POST request to the path &#x27;/todos/&#x27; with invalid todo priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The POST request to the path &#x27;/todos/&#x27; with invalid todo priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_18&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 3,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe POST request to the path &#x27;/todos/&#x27; with invalid todo category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The POST request to the path &#x27;/todos/&#x27; with invalid todo category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_19&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe POST request to the path &#x27;/todos/&#x27; with invalid due date should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The POST request to the path &#x27;/todos/&#x27; with invalid due date should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_20&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 10,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;status&#x27; property in the body should return the &#x27;Status Updated&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;status&#x27; property in the body should return the &#x27;Status Updated&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_21&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 10,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;priority&#x27; property in the body should return the &#x27;Priority Updated&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;priority&#x27; property in the body should return the &#x27;Priority Updated&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_22&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 10,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;todo&#x27; property in the body should return the &#x27;Todo Updated&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;todo&#x27; property in the body should return the &#x27;Todo Updated&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_23&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 11,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;category&#x27; property in the body should return the &#x27;Category Updated&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;category&#x27; property in the body should return the &#x27;Category Updated&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_24&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 11,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;dueDate&#x27; property in the body should return the &#x27;Due Date Updated&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with &#x27;dueDate&#x27; property in the body should return the &#x27;Due Date Updated&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_25&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe database should be updated on the put request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The database should be updated on the put request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_26&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid due date should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid due date should return &#x27;400&#x27; as status code and &#x27;Invalid Due Date&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_27&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid status should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Status&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_28&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid priority should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Priority&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_29&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 2,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The PUT request to the path &#x27;/todos/:todoId/&#x27; with invalid category should return &#x27;400&#x27; as status code and &#x27;Invalid Todo Category&#x27; text as a response to the request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_30&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 10,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe DELETE request to the path &#x27;/todos/:todoId/&#x27; should return &#x27;Todo Deleted&#x27; text as a response upon success&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The DELETE request to the path &#x27;/todos/:todoId/&#x27; should return &#x27;Todo Deleted&#x27; text as a response upon success&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_31&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Tests for Operations on Todo Application database&quot;
+          ],
+          &quot;duration&quot;: 1,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Tests for Operations on Todo Application databaseThe database should be updated on the delete request&quot;,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;The database should be updated on the delete request&quot;,
+          &quot;id&quot;: &quot;NJSCADOQBS_TEST_32&quot;
+        }
+      ],
+      &quot;failureMessage&quot;: &quot;  ● :::NJSCADOQBS_TEST_SUITE_1:::Tests for Operations on Todo Application database › :::NJSCADOQBS_TEST_2:::The GET request to the path &#x27;/todos/?status=TO%20DO&#x27; should return the list of all todos whose status is &#x27;TO DO&#x27; as a response\n\n    listen EADDRINUSE: address already in use :::3000\n\n      18 |       driver: sqlite3.Database,\n      19 |     });\n    &gt; 20 |     app.listen(3000, () =&gt; {\n         |         ^\n      21 |       console.log(\&quot;Server is Running At port :3000\&quot;);\n      22 |     });\n      23 |   } catch (e) {\n\n      at Function.listen (../node_modules/.pnpm/express@4.17.1/node_modules/express/lib/application.js:618:24)\n      at installDBAndServer (../app.js:20:9)\n\n  ● :::NJSCADOQBS_TEST_SUITE_1:::Tests for Operations on Todo Application database › :::NJSCADOQBS_TEST_16:::The database should be updated on the post request\n\n    expect(received).toEqual(expected) // deep equality\n\n    - Expected  - 1\n    + Received  + 1\n\n      Object {\n        \&quot;category\&quot;: \&quot;WORK\&quot;,\n    -   \&quot;due_date\&quot;: \&quot;2021-09-22\&quot;,\n    +   \&quot;due_date\&quot;: \&quot;2021-9-22\&quot;,\n        \&quot;id\&quot;: 6,\n        \&quot;priority\&quot;: \&quot;MEDIUM\&quot;,\n        \&quot;status\&quot;: \&quot;TO DO\&quot;,\n        \&quot;todo\&quot;: \&quot;Review codes\&quot;,\n      }\n\n      280 |\n      281 |   test(\&quot;:::NJSCADOQBS_TEST_16:::The database should be updated on the post request\&quot;, async () =&gt; {\n    &gt; 282 |     expect(await database.get(`SELECT * FROM todo WHERE id=6`)).toEqual({\n          |                                                                 ^\n      283 |       id: 6,\n      284 |       todo: \&quot;Review codes\&quot;,\n      285 |       priority: \&quot;MEDIUM\&quot;,\n\n      at Object.&lt;anonymous&gt; (index.test.js:282:65)\n&quot;
+    }
+  ],
+  &quot;wasInterrupted&quot;: false
+}</div></body></html>
